@@ -1,0 +1,44 @@
+.sortarea {
+  position: relative;
+  flex: 0.95;
+  margin-left: 10px;
+
+  &:hover {
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .dropdown {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 100%;
+    color: #000;
+    text-align: left;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #fff;
+  }
+  .dropdownopen {
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    background: #fff;
+    right: 0;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+
+    & > div {
+      padding: 5px;
+    }
+
+    & .active {
+      background: #ddd;
+      border-radius: 5px;
+    }
+  }
+}

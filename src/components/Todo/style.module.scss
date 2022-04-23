@@ -1,0 +1,83 @@
+.todorow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  padding: 5px 10px;
+
+  &:hover {
+    background: #f5f5f5;
+  }
+
+  .todoleft {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: space-between;
+
+    .todoname {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 30px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      word-break: break-all;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .priority {
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      padding: 5px 10px;
+      border-radius: 3px;
+      width: 80px;
+    }
+
+    & .urgent {
+      background-color: #e83d6d;
+    }
+    & .regular {
+      background-color: #f1a824;
+    }
+    & .trivial {
+      background-color: #2277e0;
+    }
+  }
+
+  .todoright {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    justify-content: flex-end;
+    cursor: pointer;
+    user-select: none;
+
+    & > div {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      border-radius: 3px;
+      align-items: center;
+      background: #e8e8e8;
+
+      &:last-child {
+        margin-left: 10px;
+      }
+
+      & > img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

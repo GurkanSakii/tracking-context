@@ -1,0 +1,89 @@
+.formarea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  .todoform {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .namearea {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      flex: 2;
+      width: 100%;
+      position: relative;
+
+      & > label {
+        margin-bottom: 5px;
+        color: #949faf;
+        word-break: break-all;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .todoinput {
+        padding: 15px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        outline: none;
+        width: 100%;
+        height: 48px;
+        background: transparent;
+        color: #000;
+      }
+    }
+
+    .priorityarea {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: flex-end;
+
+      & .prioritycontent {
+        margin: 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex: 2;
+        width: 100%;
+        position: relative;
+
+        & label {
+          margin-bottom: 5px;
+          color: #949faf;
+        }
+      }
+
+      .todobutton {
+        padding: 10px;
+        border-radius: 4px;
+        height: 48px;
+        cursor: pointer;
+        outline: none;
+        background: #2277e0;
+        border: 1px solid #ddd;
+        color: #fff;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          margin-right: 5px;
+          width: 16px;
+          height: 16px;
+          filter: invert(1);
+        }
+      }
+    }
+  }
+}

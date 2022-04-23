@@ -1,0 +1,27 @@
+.searcharea {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 2;
+  width: 100%;
+  position: relative;
+
+  & img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+  }
+
+  & .searchinput {
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 100%;
+    background: #fff;
+    height: 48px;
+    text-indent: 25px;
+  }
+}
